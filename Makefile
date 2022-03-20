@@ -11,9 +11,9 @@ black:
 	@black tftemplates/**.py
 
 test:
-	@coverage run -m pytest tests
-	@coverage report -m --omit="${VIRTUAL_ENV}/lib/python*"
-
+	@coverage erase
+	@coverage run -m pytest tests -W ignore::DeprecationWarning
+	@coverage report -m -i
 ftest:
 	@Write me
 

@@ -1,0 +1,17 @@
+# packaging
+setuptools>=26
+
+# data science
+numpy
+pandas
+
+# ml
+sklearn
+tensorflow
+
+# tests/linter
+black
+coverage
+flake8
+pytest
+yapf

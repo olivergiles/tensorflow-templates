@@ -4,6 +4,7 @@ setuptools>=26
 # data science
 numpy
 pandas
+seaborn
 
 # ml
 sklearn

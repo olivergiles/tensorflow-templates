@@ -8,7 +8,7 @@ check_code:
 	@flake8 tftemplates/**.py
 
 black:
-	@black tftemplates/**.py
+	@black tftemplates/**
 
 test:
 	@coverage erase

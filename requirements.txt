@@ -1,5 +1,5 @@
 # packaging
-setuptools>=26
+setuptools >= 26
 
 # data science
 numpy

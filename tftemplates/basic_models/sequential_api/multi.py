@@ -30,4 +30,4 @@ def main(test=False):
 
 if __name__ == "__main__":
     history = main()
-    assert(len(history.history) == 500)
+    assert(len(history.history["loss"]) == 500)

@@ -24,7 +24,7 @@ def main(test=False):
     y_cat = to_categorical(y)
     X_train, X_test, y_train, y_test = train_test_split(X, y_cat)
     model = create_model()
-    history = model.fit(X_train, y_train, epochs=500, validation_split=0.3, batch_size=32)
+    history = model.fit(X_train, y_train, epochs=EPOCHS, validation_split=0.3, batch_size=32)
     return history
 
 if __name__ == "__main__":

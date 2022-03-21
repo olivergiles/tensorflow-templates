@@ -19,12 +19,13 @@ def create_model():
 def main(test=False):
     EPOCHS = 500
     if test:
-        EPOCHS = 3
+        EPOCHS = 5
     X, y = make_blobs(500, 8, centers=7, cluster_std=8,random_state=42)
     y_cat = to_categorical(y)
     X_train, X_test, y_train, y_test = train_test_split(X, y_cat)
     model = create_model()
     history = model.fit(X_train, y_train, epochs=EPOCHS, validation_split=0.3, batch_size=32)
+    print(model.evaluate(X_test, y_test))
     return history
 
 if __name__ == "__main__":

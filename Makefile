@@ -28,4 +28,4 @@ clean:
 install:
 	@pip install . -U
 
-all: clean install test black check_code
+all: clean test black check_code
